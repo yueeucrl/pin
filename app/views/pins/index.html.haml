@@ -1,0 +1,7 @@
+.row
+  .col-md-12
+    %h1 index here
+    - @pins.each do |p|
+      %h2
+        = link_to p.title, p
+    = link_to "Create", new_pin_path

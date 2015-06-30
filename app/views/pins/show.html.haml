@@ -1,0 +1,8 @@
+.row
+  .col-md-6.col-md-offset-3
+    %h1 Show here created Pin
+    %hr
+    %h2= @pin.title
+    %p= @pin.description
+    = link_to "Edit", edit_pin_path
+    = link_to "Delete", @pin, method: :delete
