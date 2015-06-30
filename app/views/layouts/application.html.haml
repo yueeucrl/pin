@@ -6,5 +6,10 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    .navbar.navbar-default
+      .container
+        .navbar-header
+          %p.navbar-text.navbar-right
+            = link_to "Pins", root_path
     .container
       = yield
